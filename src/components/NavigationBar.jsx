@@ -2,9 +2,7 @@ function NavigationBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container px-4 px-lg-5">
-        <a className="navbar-brand" href="#!">
-          HungryMe
-        </a>
+        <h3>HungryMe</h3>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,13 +18,13 @@ function NavigationBar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">
-                Home
+                Acasa
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/add_recipe">
-                Add recipe
-              </a>
+              {/* <a className="nav-link" href="/add_recipe">
+                Adauga o noua reteta
+              </a> */}
             </li>
           </ul>
         </div>

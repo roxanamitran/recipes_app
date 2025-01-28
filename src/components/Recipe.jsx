@@ -21,8 +21,12 @@ function Recipe({ recipe }) {
 
   return (
     <div className="card">
-      <Card style={{ width: "16rem" }} onClick={handleViewDetails}>
-        <Card.Img variant="top" src={recipe.image} />
+      <Card style={{ width: "16rem" }}>
+        <Card.Img
+          variant="top"
+          src={recipe.image}
+          onClick={handleViewDetails}
+        />
         <Card.Body>
           <Card.Title>{recipe.name}</Card.Title>
           <Button

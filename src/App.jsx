@@ -10,22 +10,20 @@ import AddRecipe from "./pages/AddRecipe";
 function App() {
   const [recipes, setRecipes] = useState([]);
   useEffect(() => {
-    // Attach a real-time listener to Firebase
     const unsubscribe = onSnapshot(
-      collection(db, "recipes"), // Replace "items" with your collection name
+      collection(db, "recipes"),
       (snapshot) => {
         const data = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data()
         }));
-        setRecipes(data); // Update state when data changes
+        setRecipes(data);
       },
       (error) => {
         console.error("Error fetching items: ", error);
       }
     );
 
-    // Cleanup listener on unmount
     return () => unsubscribe();
   }, []);
 

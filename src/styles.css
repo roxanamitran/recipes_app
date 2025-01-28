@@ -11174,25 +11174,38 @@ fieldset:disabled .btn {
 }
 
 .recipe {
-  height: 100vh;
-  align-items: center;
-  display: flex;
-  overflow: hidden;
-  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.recipe h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .recipe-photo {
-  width: 40%;
   height: auto;
   border-radius: 8px;
+  margin-bottom: 20px;
   object-fit: cover;
+  border: 2px solid #e0e0e0;
 }
 
 .preparation {
-  margin: auto;
-  padding: 0%;
-  text-align: justify;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #565e64;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 .form {
@@ -11201,4 +11214,13 @@ fieldset:disabled .btn {
   text-align: center;
   justify-content: center;
   width: 70%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  text-align: center;
+  gap: 20px;
 }

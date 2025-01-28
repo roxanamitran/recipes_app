@@ -37,31 +37,23 @@ function RecipeDetails() {
 
   return (
     <div className="recipe">
-      <Row>
-        <Col xs={12} md={6}>
-          <h1>{recipe.name}</h1>
-          <img className="recipe-photo" src={recipe.image} alt={recipe.name} />
-          <h3>Timp de preparare: {recipe.time} minute</h3>
-          <h4>
-            Ingrediente:
-            {recipe.ingredients?.map((ingredient, i) => (
-              <li key={i}>{ingredient}</li>
-            ))}
-          </h4>
-        </Col>
-        <Col xs={12} md={4}>
-          <h3 className="preparation">
-            Mod de preparare: {recipe.preparation}
-          </h3>
-          <Button
-            variant="primary"
-            style={{ marginBottom: "15px" }}
-            onClick={handleEdit}
-          >
-            Editeaza reteta
-          </Button>
-        </Col>
-      </Row>
+      <h1>{recipe.name}</h1>
+      <img className="recipe-photo" src={recipe.image} alt={recipe.name} />
+      <h3>Timp de preparare: {recipe.time} minute</h3>
+      <h4>
+        Ingrediente:
+        {recipe.ingredients?.map((ingredient, i) => (
+          <li key={i}>{ingredient}</li>
+        ))}
+      </h4>
+      <h3 className="preparation">Mod de preparare: {recipe.preparation}</h3>
+      <Button
+        variant="secondary"
+        style={{ marginBottom: "15px" }}
+        onClick={handleEdit}
+      >
+        Editeaza reteta
+      </Button>
     </div>
   );
 }

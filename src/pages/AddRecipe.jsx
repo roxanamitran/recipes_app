@@ -43,7 +43,7 @@ function AddRecipe() {
 
     try {
       if (id) {
-        const docRef = doc(db, "recipes, id");
+        const docRef = doc(db, "recipes", id);
         await updateDoc(docRef, newRecipe);
         console.log("Reteta editata cu succes");
       } else {
