@@ -1,4 +1,4 @@
-HyngryMe - Recipe App
+HungryMe - Recipe App
 HungryMe is a recipe app where users can browse, add, edit, and delete recipes. The app allows users to filter recipes by categories like lunch, dinner, breakfast, and desserts. All data is stored in Firebase, and each recipe includes an image sourced from Pinterest, time needed for preparation the recipe, ingredients data and preparation.
 
 Features:
