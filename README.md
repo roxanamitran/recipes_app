@@ -13,8 +13,8 @@ Features:
 Installation
 To get the project running locally, follow these steps:
 
-1. Clone the repository: git clone https://github.com/your-username/HungryMe.git
-2. Navigate to the project folder: cd HungryMe
+1. Clone the repository: git clone https://github.com/your-username/recipes_app.git
+2. Navigate to the project folder: cd recipes_app
 3. Install the dependencies: npm install
 4. Set up Firebase:
 
